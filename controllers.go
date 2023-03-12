@@ -9,13 +9,7 @@ func getReporte(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(reporte)
 }
 
-func addReporte(w http.ResponseWriter, r *http.Request) {
-	var newReporte Reportes
-	json.NewDecoder(r.Body).Decode(&newReporte)
-	newReporte.ID = len(reporte) + 1
-	reporte = append(reporte, newReporte)
-	json.NewEncoder(w).Encode(newReporte)
-}
+
 
 /*func updateReporte(w http.ResponseWriter, r *http.Request) {
 	var updatedReporte Reportes
