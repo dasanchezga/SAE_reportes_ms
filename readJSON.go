@@ -7,7 +7,6 @@ import (
 )
 
 //lee el JSON que recibe la API
-// "./ext/generated.json"
 func readJSON() ([]Reportes, error) {
 	file, err := os.Open("./ext/generated.json")
 	if err != nil {

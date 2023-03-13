@@ -9,8 +9,6 @@ func getReporte(w http.ResponseWriter, r *http.Request) {
 	json.NewEncoder(w).Encode(reporte)
 }
 
-
-
 /*func updateReporte(w http.ResponseWriter, r *http.Request) {
 	var updatedReporte Reportes
 	json.NewDecoder(r.Body).Decode(&updatedReporte)
